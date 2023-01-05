@@ -7,9 +7,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Details from './components/Details';
 
-
 function App() {
-
   return (
     <Router>
       <Navigation />

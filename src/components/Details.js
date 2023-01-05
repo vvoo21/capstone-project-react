@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {  useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import fetchCryptoDetail from '../redux/cryptoDetailsApi';
 
 const Details = () => {
@@ -14,7 +14,7 @@ const Details = () => {
   }, [dispatch]);
 
   console.log(state);
-  
+
   return (
     <div>
       {state.map((cryptoDetail) => (
