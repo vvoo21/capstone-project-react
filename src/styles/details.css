@@ -1,0 +1,31 @@
+.details-container,
+.details-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container div {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-symbol{
+  color: #fff;
+}
+
+.details-list li {
+  padding: 1rem 0.5rem;
+}
+
+.details-list li:nth-child(odd) {
+  background-color: rgb(204, 78, 137);
+}
+
+.info-text {
+  color:  #fff;
+  font-size: 1.1rem;
+}
+
