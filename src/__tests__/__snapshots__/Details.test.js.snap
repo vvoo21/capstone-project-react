@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Connected React-Redux Component renders correctly 1`] = `
+<div
+  className="details-container"
+>
+  <div>
+    <img
+      height="150"
+      src="https://www.cryptocompare.com/undefined"
+      width="150"
+    />
+    <h2
+      className="text-symbol"
+    >
+      Symbol:  
+    </h2>
+  </div>
+  <ul
+    className="details-list"
+  >
+    <li>
+      <p
+        className="info-text"
+      >
+        coin information
+      </p>
+    </li>
+    <li>
+      <p
+        className="info-text"
+      >
+        The price is:  
+      </p>
+    </li>
+    <li>
+      <p
+        className="info-text"
+      >
+        The highest price of the day:  
+      </p>
+    </li>
+    <li>
+      <p
+        className="info-text"
+      >
+        The lowest price of the day:  
+      </p>
+    </li>
+    <li>
+      <p
+        className="info-text"
+      >
+        Variation last 24 hours:  
+      </p>
+    </li>
+    <li>
+      <p
+        className="info-text"
+      >
+        Last update:  
+      </p>
+    </li>
+  </ul>
+</div>
+`;
