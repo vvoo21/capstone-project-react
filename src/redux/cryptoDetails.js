@@ -1,22 +1,31 @@
-// actions
-const GET_CRYPTO_DETAILS = 'cryptoDetails/GET_CRYPTO_DETAILS';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// reducer
-const initialState = [];
+export const fetchCryptoDetail = createAsyncThunk(
+  'cryptoDetails/fetchCryptoDetail',
+  async (id) => {
+    const response = await fetch(
+      `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${id}&tsyms=USD`,
+    );
+    const data = await response.json();
+    const resultsDetails = data.DISPLAY[id].USD;
+    return resultsDetails;
+  },
+);
 
-const cryptoDetailsReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case `${GET_CRYPTO_DETAILS}/fulfilled`:
-      return action.payload;
-    default:
-      return state;
-  }
-};
+const cryptoDetailsSlice = createSlice({
+  name: 'cryptoDetails',
+  initialState: {
+    cryptoDetails: {},
+  },
+  reducers: {},
 
-// action creator
-export const getCryptoDetails = (payload) => ({
-  type: GET_CRYPTO_DETAILS,
-  payload,
+  extraReducers: {
+    /* eslint-disable */
+    [fetchCryptoDetail.fulfilled]: (state, action) => {
+      state.cryptoDetails = action.payload;
+    },
+    /* eslint-enable */
+  },
 });
 
-export default cryptoDetailsReducer;
+export default cryptoDetailsSlice.reducer;
