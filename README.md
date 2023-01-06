@@ -50,7 +50,7 @@ This is my latest React project, I chose an API from The Crypto Compare which pr
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://)
+- [Live Demo Link](https://gregarious-salamander-5f280a.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
