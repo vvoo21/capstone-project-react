@@ -1,0 +1,27 @@
+.cryptos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.crypto-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.crypto-link img {
+  align-self: center;
+  max-width: 100%;
+}
+
+.crypto-link h2 {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-top: 0.5rem;
+}
+
+.crypto {
+  border: 1px solid #908f8f9a;
+}
