@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav
+  className="nav-bar"
+>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="active"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="back-icon"
+          height="28"
+          src="icons8-back-48.png"
+          width="28"
+        />
+      </a>
+    </li>
+    <li>
+      <h1
+        className="nav-title"
+      >
+        Crypto
+      </h1>
+    </li>
+    <li>
+      <img
+        alt="back-icon"
+        height="24"
+        src="icons8-microphone-48.png"
+        width="24"
+      />
+      <img
+        alt="back-icon"
+        height="24"
+        src="icons8-configuration-32.png"
+        width="24"
+      />
+    </li>
+  </ul>
+</nav>
+`;
